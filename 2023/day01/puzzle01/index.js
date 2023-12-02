@@ -1,19 +1,10 @@
 import getLinesFromFile from "../../utils/get-lines-from-file.js";
 
-const DIGIT_REGEX = /[0-9]/;
-
-const getFirstDigit = (text) => {
-  return DIGIT_REGEX.exec(text)[0];
-};
-
-const reverseString = (text) => {
-  return text.split("").reverse().join("");
-};
+const DIGIT_REGEX = /[0-9]/g;
 
 const getCalibrationValue = (text) => {
-  const firstDigit = getFirstDigit(text);
-  const lastDigit = getFirstDigit(reverseString(text));
-  return Number(firstDigit + lastDigit);
+  const matches = text.match(DIGIT_REGEX);
+  return Number(matches[0] + matches[matches.length - 1]);
 };
 
 // execution
