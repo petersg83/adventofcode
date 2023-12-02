@@ -17,6 +17,9 @@ const isGamePossible = (gameLine) => {
   });
 };
 
+// For fun, in one line:
+// const isGamePossible = (gameLine) => gameLine.split(":")[1].split(";").every((pick) => pick.split(",").map((set) => set.trim()).every((set) => maxColorMap[set.split(" ")[1]] >= Number(set.split(" ")[0])));
+
 const inputLines = await getLinesFromFile("./data.txt");
 const sum = inputLines.reduce((sum, line, index) => (isGamePossible(line) ? sum + index + 1 : sum), 0);
 console.log(sum);
