@@ -14,8 +14,6 @@ const digitMap = {
   nine: "9",
 };
 
-const isEmptyLine = (text) => !!text;
-
 const castToSingleStringDigit = (text) => {
   return text in digitMap ? digitMap[text] : text;
 };
@@ -30,8 +28,5 @@ const getCalibrationValue = (text) => {
 // execution
 
 const inputLines = await getLinesFromFile("./data.txt");
-const nonEmptyLines = inputLines.filter((line) => isEmptyLine(line));
-
-const sum = nonEmptyLines.reduce((sum, line) => sum + getCalibrationValue(line), 0);
-
+const sum = inputLines.reduce((sum, line) => sum + getCalibrationValue(line), 0);
 console.log(sum);

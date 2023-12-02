@@ -2,8 +2,6 @@ import getLinesFromFile from "../../utils/get-lines-from-file.js";
 
 const DIGIT_REGEX = /[0-9]/;
 
-const isEmptyLine = (text) => !!text;
-
 const getFirstDigit = (text) => {
   return DIGIT_REGEX.exec(text)[0];
 };
@@ -21,11 +19,5 @@ const getCalibrationValue = (text) => {
 // execution
 
 const inputLines = await getLinesFromFile("./data.txt");
-const nonEmptyLines = inputLines.filter((line) => isEmptyLine(line));
-
-const sum = nonEmptyLines.reduce(
-  (sum, line) => sum + getCalibrationValue(line),
-  0
-);
-
+const sum = inputLines.reduce((sum, line) => sum + getCalibrationValue(line), 0);
 console.log(sum);
