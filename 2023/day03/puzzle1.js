@@ -1,4 +1,4 @@
-import getLinesFromFile from "../../utils/get-lines-from-file.js";
+import getLinesFromFile from "../utils/get-lines-from-file.js";
 
 const getIsEnginePartFor = engineSchematic => (number, row, column) => {
   const maxRow = engineSchematic.length - 1;

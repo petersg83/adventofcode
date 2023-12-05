@@ -1,4 +1,4 @@
-import getLinesFromFile from "../../utils/get-lines-from-file.js";
+import getLinesFromFile from "../utils/get-lines-from-file.js";
 
 const DIGIT_AND_SPELLED_DIGIT_REGEX = /(?=([0-9]|one|two|three|four|five|six|seven|eight|nine))/g;
 

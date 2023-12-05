@@ -1,4 +1,4 @@
-import getLinesFromFile from "../../utils/get-lines-from-file.js";
+import getLinesFromFile from "../utils/get-lines-from-file.js";
 
 const getGamePower = (gameLine) => {
   const colorMax = { red: 0, green: 0, blue: 0 };

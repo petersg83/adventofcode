@@ -1,4 +1,4 @@
-import getLinesFromFile from "../../utils/get-lines-from-file.js";
+import getLinesFromFile from "../utils/get-lines-from-file.js";
 
 const getNumbersWithInRange = (text, minIndex, maxIndex) => {
   if (typeof text !== 'string') {

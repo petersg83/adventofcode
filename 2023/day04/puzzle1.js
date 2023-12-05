@@ -1,4 +1,4 @@
-import getLinesFromFile from "../../utils/get-lines-from-file.js";
+import getLinesFromFile from "../utils/get-lines-from-file.js";
 import fp from "https://esm.sh/lodash@4.17.21/fp.js";
 
 const countPointsFor = (card) => {

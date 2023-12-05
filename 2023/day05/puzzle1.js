@@ -1,4 +1,4 @@
-import getLinesFromFile from "../../utils/get-lines-from-file.js";
+import getLinesFromFile from "../utils/get-lines-from-file.js";
 
 const parseRawAlmanac = (rawAlmanac) => {
   const maps = [];
