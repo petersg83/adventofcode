@@ -28,21 +28,30 @@ const getKindPower = (hand) => {
   return 0;
 };
 
-const compareHands = (hand1, hand2) => {
-  const kindPower1 = getKindPower(hand1);
-  const kindPower2 = getKindPower(hand2);
-
-  if (kindPower1 === kindPower2) {
+const compareHands = (handDetail1, handDetail2) => {
+  const hand1 = handDetail1.hand;
+  const hand2 = handDetail2.hand;
+  if (handDetail1.power === handDetail2.power) {
     const firstCardDiffIndex = hand1.split('').findIndex((card1, index) => card1 !== hand2[index]);
     return cardPowerMap[hand1[firstCardDiffIndex]] - cardPowerMap[hand2[firstCardDiffIndex]];
   }
 
-  return kindPower1 - kindPower2;
+  return handDetail1.power - handDetail2.power;
 };
 
-// TODO: improve by precalculating kindPower for each hand instead of computing it in each comparison
+const parseHandsDetails = (lines) => {
+  return lines.map(line => {
+    const [hand, bid] = line.split(' ');
+    return {
+      hand,
+      bid: Number(bid),
+      power: getKindPower(hand),
+    };
+  });
+};
+
 const inputLines = await getLinesFromFile('./data.txt');
-const handsAndBids = inputLines.map(line => line.split(' '));
-handsAndBids.sort(([hand1], [hand2]) => compareHands(hand1, hand2));
-const sum = handsAndBids.reduce((sum, [_hand, bid], rank) => sum + bid * (rank + 1), 0);
+const handsDetails = parseHandsDetails(inputLines);
+handsDetails.sort((handDetail1, handDetail2) => compareHands(handDetail1, handDetail2));
+const sum = handsDetails.reduce((sum, { bid }, rank) => sum + bid * (rank + 1), 0);
 console.log(sum);
