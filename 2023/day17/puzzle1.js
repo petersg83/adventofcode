@@ -1,3 +1,9 @@
+/*
+  This solution works but doesn't seem very efficient.
+  I found what seems a better solution done by someone else that I refactored my own way
+  in ./someone-else-solution-bfs.js and ./someone-else-solution-dijkstra.js
+*/
+
 import getLinesFromFile from "../utils/get-lines-from-file.js";
 
 const oppositeDir = {
