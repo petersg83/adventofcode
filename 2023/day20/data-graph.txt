@@ -1,0 +1,109 @@
+digraph {
+  jr -> { mq; xn }
+  zl -> { tz; cm }
+  lh -> nr
+  hx -> { jx; tz }
+  cm -> { tz; ls }
+  fk -> nr
+  broadcaster -> { sj; pf; kh; cn }
+  gz -> { mq; lq }
+  gb -> { xf; kr }
+  zc -> rq
+  ln -> { qj; xf }
+  gq -> pp
+  fb -> xf
+  pf -> { tg; nv }
+  bc -> cf
+  tz -> { cn; fk; ls }
+  cq -> { fb; xf }
+  rq -> { tg; dx }
+  km -> gq
+  mq -> { gq; xn; fv; km; lh; xv; sj }
+  zp -> { mq; xv }
+  jx -> { tz; np }
+  tg -> { mm; rp; zc; pf; bc }
+  cv -> { sq; xf }
+  nv -> { ht; tg }
+  sq -> gb
+  kr -> ln
+  dk -> cv
+  xn -> zp
+  sx -> { xf; cq }
+  zt -> { tz; fq }
+  dx -> { tg; qn }
+  ff -> nr
+  bn -> { hx; tz }
+  fj -> { zt; tz }
+  ht -> { rr; tg }
+  fq -> { tz; bn }
+  kh -> { dk; xf }
+  sj -> { mq; fv }
+  vm -> { zl; tz }
+  mm -> nr
+  rp -> bc
+  fh -> sx
+  ls -> fj
+  xz -> { mq; gz }
+  fv -> km
+  nr -> rx
+  lq -> mq
+  xv -> xz
+  cn -> { tz; vm }
+  pp -> { jr; mq }
+  hn -> tg
+  qn -> { hn; tg }
+  rr -> { rp; tg }
+  cf -> { tg; zc }
+  qj -> { fh; xf }
+  xf -> { sq; dk; fh; ff; kh; kr }
+  np -> tz
+
+  jr [color=yellow]
+  zl [color=yellow]
+  hx [color=yellow]
+  cm [color=yellow]
+  gz [color=yellow]
+  gb [color=yellow]
+  zc [color=yellow]
+  ln [color=yellow]
+  gq [color=yellow]
+  fb [color=yellow]
+  pf [color=yellow]
+  bc [color=yellow]
+  cq [color=yellow]
+  rq [color=yellow]
+  km [color=yellow]
+  zp [color=yellow]
+  jx [color=yellow]
+  cv [color=yellow]
+  nv [color=yellow]
+  sq [color=yellow]
+  kr [color=yellow]
+  dk [color=yellow]
+  xn [color=yellow]
+  sx [color=yellow]
+  zt [color=yellow]
+  dx [color=yellow]
+  bn [color=yellow]
+  fj [color=yellow]
+  ht [color=yellow]
+  fq [color=yellow]
+  kh [color=yellow]
+  sj [color=yellow]
+  vm [color=yellow]
+  rp [color=yellow]
+  fh [color=yellow]
+  ls [color=yellow]
+  xz [color=yellow]
+  fv [color=yellow]
+  lq [color=yellow]
+  xv [color=yellow]
+  cn [color=yellow]
+  pp [color=yellow]
+  hn [color=yellow]
+  qn [color=yellow]
+  rr [color=yellow]
+  cf [color=yellow]
+  qj [color=yellow]
+  np [color=yellow]
+}
